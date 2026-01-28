@@ -7,8 +7,6 @@ The task is suitable for offline (lab) and online (Pavlovia) data collection and
 
 The Stop-Signal Task measures response inhibition by requiring participants to withhold an already initiated response when a stop signal appears.
 
-This implementation uses a stimulus-change design (not Go/No-Go):
-
 Every trial starts as a Go trial
 
 On a minority of trials (~25%), the stimulus changes color after a delay, signaling Stop
@@ -151,3 +149,4 @@ Contact
 
 If you use or adapt this task, feel free to cite or acknowledge the repository.
 Questions or suggestions are welcome via GitHub issues.
+
