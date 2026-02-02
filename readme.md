@@ -110,7 +110,7 @@ images/
  ├── go_right.png    (white right arrow)
  ├── stop_left.png   (red left arrow)
  └── stop_right.png  (red right arrow)
-
+```
 
 ## Output Data
 
@@ -159,5 +159,6 @@ https://doi.org/10.7554/eLife.46323
 
 ## Contact
 Questions or suggestions are welcome via GitHub Issues.
+
 
 
