@@ -17,11 +17,11 @@ It generates trial-level behavioural data suitable for **SSRT estimation**.
 - [Adaptive SSD (Staircase)](#-adaptive-ssd-staircase-procedure)
 - [Experimental Structure](#-experimental-structure)
 - [Stimuli](#-stimuli)
-- [Output Data](#-output-data)
-- [Repository Structure](#-repository-structure)
-- [Running Online (Pavlovia)](#-running-online-pavlovia)
-- [References](#-references)
-- [Contact](#-contact)
+- [Output Data](#output-data)
+- [Repository Structure](#repository-structure)
+- [Running Online (Pavlovia)](#running-online-pavlovia)
+- [References](#references)
+- [Contact](#contact)
 
 ---
 
@@ -150,4 +150,5 @@ https://doi.org/10.7554/eLife.46323
 
 ## Contact
 Questions or suggestions are welcome via GitHub Issues.
+
 
