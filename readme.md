@@ -111,7 +111,7 @@ images/
  ├── stop_left.png   (red left arrow)
  └── stop_right.png  (red right arrow)
 
-Output Data
+## Output Data
 
 -The task logs trial-level behavioural measures including:
 -Go/Stop trial type
@@ -122,7 +122,8 @@ Output Data
 -stop success / failure
 The output format supports SSRT computation using the integration method.
 
-Repository Strucuture
+## Repository Strucuture
+
 ├── SST2.psyexp
 ├── conditions.xlsx
 ├── images/
@@ -132,7 +133,7 @@ Repository Strucuture
     ├── requirements.txt
     └── data_sample/
 
-Running Online (Pavlovia)
+## Running Online (Pavlovia)
 
 This experiment is PsychoJS-compatible.
 Steps:
@@ -141,11 +142,12 @@ Tools → Pavlovia → Log in
 Tools → Pavlovia → Sync project
 Pilot the study via Pavlovia before data collection
 
-References
+## References
 Verbruggen, F., Aron, A. R., Band, G. P. H., et al. (2019).
 A consensus guide to capturing the ability to inhibit actions and impulsive behaviors in the stop-signal task.
 eLife, 8:e46323.
 https://doi.org/10.7554/eLife.46323
 
-Contact
+## Contact
 Questions or suggestions are welcome via GitHub Issues.
+
