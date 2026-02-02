@@ -3,8 +3,8 @@
 This repository contains a **stimulus-change Stop-Signal Task (SST)** implemented in **PsychoPy Builder**, designed according to the consensus recommendations by **Verbruggen et al. (2019)**.
 
 The task supports both:
-- ✅ **Offline (lab) testing**
-- ✅ **Online deployment (Pavlovia / PsychoJS-compatible)**
+-  **Offline (lab) testing**
+-  **Online deployment (Pavlovia / PsychoJS-compatible)**
 
 It generates trial-level behavioural data suitable for **SSRT estimation**.
 
@@ -26,7 +26,7 @@ It generates trial-level behavioural data suitable for **SSRT estimation**.
 
 ---
 
-## 🧠 Task Overview
+## Task Overview
 
 The Stop-Signal Task measures **response inhibition** by requiring participants to withhold an already initiated response when a stop signal occurs.
 
@@ -36,7 +36,7 @@ The Stop-Signal Task measures **response inhibition** by requiring participants 
 
 ---
 
-## ✅ Task Logic
+## Task Logic
 
 ### Go Trials (~75%)
 - White arrow (left or right) appears
@@ -54,7 +54,7 @@ The Stop-Signal Task measures **response inhibition** by requiring participants 
 
 ---
 
-## ⏱ Timing Parameters (default)
+## Timing Parameters (default)
 
 | Parameter | Value | Description |
 |----------|------:|-------------|
@@ -70,7 +70,7 @@ The Stop-Signal Task measures **response inhibition** by requiring participants 
 
 ---
 
-## 🔁 Adaptive SSD (Staircase Procedure)
+## Adaptive SSD (Staircase Procedure)
 
 SSD is adjusted dynamically to target:
 
@@ -82,7 +82,7 @@ SSD is adjusted dynamically to target:
 
 ---
 
-## 🧩 Experimental Structure
+## Experimental Structure
 
 ### Practice Phase
 - 1 block × 32 trials
@@ -101,7 +101,7 @@ Between blocks, participants see:
 
 ---
 
-## 🖼 Stimuli
+## Stimuli
 
 The task uses four stimulus images:
 
@@ -113,7 +113,7 @@ images/
  └── stop_right.png  (red right arrow)
 ```
 
-## 📊 Output Data
+## Output Data
 
 The task logs trial-level behavioural measures including:
 
@@ -128,7 +128,7 @@ The output format supports SSRT computation using the **integration method**.
 
 ---
 
-## 🐍 Python Analysis Pipeline
+## Python Analysis Pipeline
 
 A reproducible Python data cleaning + SSRT estimation workflow is included in:
 
@@ -152,7 +152,7 @@ A small anonymised sample dataset is included in:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -189,6 +189,7 @@ Verbruggen, F., Aron, A. R., Band, G. P. H., et al. (2019).
 
 ## Contact
   Questions or suggestions are welcome via GitHub Issues.
+
 
 
 
