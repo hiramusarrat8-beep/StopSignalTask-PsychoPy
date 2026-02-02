@@ -18,6 +18,7 @@ It generates trial-level behavioural data suitable for **SSRT estimation**.
 - [Experimental Structure](#-experimental-structure)
 - [Stimuli](#-stimuli)
 - [Output Data](#output-data)
+- [Python Analysis Pipeline](#python-analysis-pipeline)
 - [Repository Structure](#repository-structure)
 - [Running Online (Pavlovia)](#running-online-pavlovia)
 - [References](#references)
@@ -112,21 +113,49 @@ images/
  └── stop_right.png  (red right arrow)
 ```
 
-## Output Data
+## 📊 Output Data
 
--The task logs trial-level behavioural measures including:
--Go/Stop trial type
--stimulus direction
--response key
--reaction time (RT)
--SSD per stop trial
--stop success / failure
-The output format supports SSRT computation using the integration method.
+The task logs trial-level behavioural measures including:
+
+- Go/Stop trial type  
+- Stimulus direction  
+- Response key  
+- Reaction time (RT)  
+- SSD per stop trial  
+- Stop success / failure  
+
+The output format supports SSRT computation using the **integration method**.
 
 ---
 
-## Repository Strucuture
+## 🐍 Python Analysis Pipeline
 
+A reproducible Python data cleaning + SSRT estimation workflow is included in:
+
+- `analysis_pipeline/SST_data_cleaning.ipynb`
+
+The analysis pipeline demonstrates:
+- batch loading participant `.csv` files
+- trial cleaning (dropping non-trial rows, numeric conversion)
+- Go RT cleaning using standard thresholds (RT window)
+- participant-level summary metrics:
+  - Go accuracy
+  - Mean Go RT (correct Go trials only)
+  - Stop success rate
+  - Mean SSD
+  - **SSRT (integration method)**
+- export of analysis-ready datasets
+
+A small anonymised sample dataset is included in:
+
+- `analysis_pipeline/data_sample/`
+
+---
+
+## 📂 Repository Structure
+
+```text
+.
 ├── SST2.psyexp
 ├── conditions.xlsx
 ├── images/
@@ -135,6 +164,7 @@ The output format supports SSRT computation using the integration method.
     ├── SST_data_cleaning.ipynb
     ├── requirements.txt
     └── data_sample/
+```
 
 ---
 
@@ -142,23 +172,24 @@ The output format supports SSRT computation using the integration method.
 
 This experiment is PsychoJS-compatible.
 Steps:
-Open the .psyexp file in PsychoPy Builder
-Tools → Pavlovia → Log in
-Tools → Pavlovia → Sync project
-Pilot the study via Pavlovia before data collection
+  Open the .psyexp file in PsychoPy Builder
+  Tools → Pavlovia → Log in
+  Tools → Pavlovia → Sync project
+  Pilot the study via Pavlovia before data collection
 
 ---
 
 ## References
 Verbruggen, F., Aron, A. R., Band, G. P. H., et al. (2019).
-A consensus guide to capturing the ability to inhibit actions and impulsive behaviors in the stop-signal task.
-eLife, 8:e46323.
-https://doi.org/10.7554/eLife.46323
+  A consensus guide to capturing the ability to inhibit actions and impulsive behaviors in the stop-signal task.
+  eLife, 8:e46323.
+  https://doi.org/10.7554/eLife.46323
 
 ---
 
 ## Contact
-Questions or suggestions are welcome via GitHub Issues.
+  Questions or suggestions are welcome via GitHub Issues.
+
 
 
 
